@@ -1,0 +1,4 @@
+﻿#deny all access
+deny from all
+#denies showind file directory
+Options -Indexes

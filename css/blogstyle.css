@@ -1,0 +1,380 @@
+@import url("reset.css");
+
+
+body {
+	display: block;
+	background : url('../graphix/backblog2.jpg') #336699 repeat fixed top center;
+    color: #000000;
+    padding: 0.1em;
+    margin: 0.1em;
+    font-style:normal;
+    font-variant:normal;
+    font-weight:normal;
+    font-size:0.8em;
+    font-family:Geneva,Arial,Helvetica,sans-serif;
+}
+
+h1 {
+    margin-top : 1.5em;
+    font : bold 270% Georgia, serif;
+    text-align: center;
+    color: #e6f0f2;
+    padding-bottom: 0.5em;
+}
+h2 {
+    font-weight : bold;
+    font-size : 100%;
+    color: #000000;
+    padding-bottom : 0.2em;
+}
+h3 {
+    margin:1em 0;
+    font:bold 120%/1em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.15em;
+    color:#999;
+}
+h4 {
+    font-weight : bold;
+    font-size : 80%;
+    color: #234500;
+    padding-bottom : 0.2em;
+    letter-spacing:.15em;
+}
+
+
+a:link {
+    color: #009999;
+}
+a:visited {
+    color: #003399;
+}
+a:active {
+    color: #FF3366;
+}
+a:hover {
+    color: #FF3399;
+}
+
+/*Styles
+------------------------------------------------------------*/
+/*Links
+------------------------------------------------------------*/
+#links {
+	line-height : 130%;
+	position : absolute;
+	top: 117px;
+	left: 10px;
+	width: 220px;
+	color: #CCFF99;
+}
+#links h2 {
+    font-weight : bold;
+    font-size : 100%;
+    margin : 0;
+    padding : 0;
+    border-bottom : 0px none;
+}
+#links ul {
+    margin : 0 0 2em 0;
+    padding : 0;
+    list-style : none;
+}
+#links li, #links dt, #links dd, #links dl {
+	margin : 0;
+	padding : 0;
+	background-color: #CCFFFF;
+}
+#links .profile-link {
+    margin : 3px 0 2em 0;
+    padding : 0;
+}
+#links img {
+    margin : 3px 0;
+    border : 1px solid white;
+}
+
+/*
+RSSFeed 
+----------------------------------------------------*/
+#RSSFeed {
+	margin: 0em 0.8em 0 0.8em;
+	padding: 0em 0.8em 0 0.8em;
+	font-weight : bold;
+    font-size : 120%;
+    letter-spacing:.15em;
+}
+#RSSFeed a{
+	text-decoration:none;
+}
+#RSSFeed a:link{
+	color: #003333;
+}
+#RSSFeed a:hover{
+	color: #99FF33;
+	text-decoration:blink;
+}
+	
+	
+
+
+
+/*Content------------------------------------------------------------*/
+
+#content {
+    width: 60%;
+    line-height: 130%;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    padding: 0.2em;
+}
+
+#content a:link {
+    color : #998789;
+}
+#content a:visited {
+    color : #232323;
+}
+#content a:active {
+    color : #232323;
+}
+#content a:hover {
+    color : #CC9900;
+}
+
+/* -------------------------------MENU----------------------------------------*/
+#menu {
+  width: 100%;
+  height: 4em;
+  background: #a00723;
+  clear: both;
+  -webkit-border-radius: 1em; /*rounded borders Safari */
+  -moz-border-radius: 1em; /*rounded borders  Firefox */
+}
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#menu ul li {
+  display: inline;
+}
+
+#menu ul li a {
+  float: left;
+  display: block;
+  font: bold 1.1em arial,verdana,tahoma,sans-serif;
+  line-height: 4em;
+  color: #494949;
+  text-decoration: none;
+  margin: 0;
+  padding: 0 2em;
+}
+
+#menu ul li a:hover, #menu ul li a.active  {
+  color: #CCCCCC;
+  text-decoration: none;
+  background: #873431;
+}
+
+#hidden-div-left {
+  float: left;
+  width: 50%;
+  height: 100%;
+  margin: 0 0 0 -1em;
+  overflow: hidden;
+}
+
+#hidden-div-left div {
+  display: none;
+}
+
+#hidden-div-left div.showing {
+  color: #fff;
+  text-align: justify;
+  display: block;
+}
+#hidden-div-left div.showing2 {
+  color: #fff;
+  text-align: justify;
+  display: block;
+}
+
+
+
+#hidden-div-right {
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+
+#hidden-div-right ul {
+  margin: 0.7em 0 0 0;
+  padding: 0.7em;
+  list-style: none;
+  background: #CCFFCC;
+  overflow: scroll;
+  overflow-x: hidden;
+  max-height: 90%;
+}
+
+#hidden-div-right ul li a {
+  display: block;
+  font-size: 1.0em;
+  line-height: 1.0em;
+  color: #546546;
+  text-decoration: none;
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+#hidden-div-right ul li a:hover {
+  color: #678901;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+/* Posts
+----------------------------------------------- */
+
+.date-header {
+    margin:1.5em 0 .5em;
+}
+.post {
+	color:#663300;
+    margin:.5em .5em .5em .5em;
+    padding:2em 2em 3em 2em;
+    text-indent:2%;
+	text-align: justify;
+	font-family: "Geneva","Arial","Helvetica","Sans-serif";
+	background-color:#CCFFFF;
+	-webkit-border-radius: 1.5em; /*rounded borders Safari */
+	-moz-border-radius: 1.5em; /*rounded borders  Firefox */
+	-webkit-box-shadow: 0.3em 0.3em 0.3em #999; /*box shadows Safari*/
+	-moz-box-shadow: 0.3em 0.3em 0.3em #999; /*box shadows Mozilla*/
+	filter: shadow(color=#999999, direction=135, strength=2); /*box shadows IE*/
+		filter: alpha(opacity=85);                                    /*transparency for IExplorer*/
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=85);   /*transparency for IExplorer*/
+    opacity:0.85;                                                   /*transparency for CSS3 compliant browsers*/
+    -moz-opacity: 0.85;                                    /*transparency for Mozilla*/
+}
+
+.post-title {
+    margin:0.25em 4em 0;
+   	border-style:inset; 
+	border-width:1px;
+	border-color:navy;
+    padding:0 2em 4px;
+    font-size:140%;
+    font-weight:normal;
+    line-height:1.4em;
+}
+.post-title a, .post-title a:visited, .post-title strong {
+    display:block;
+    text-decoration:none;
+    font-weight:normal;
+}
+.post-title strong, .post-title a:hover {
+}
+
+p.post-footer {
+    margin:-.25em 0 0;
+}
+.post-footer em, .comment-link {
+    font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.1em;
+}
+.post-footer em {
+    font-style:normal;
+    color:#999;
+    margin-right:.6em;
+}
+
+.post img {
+    margin : 3px 0;
+    border : 1px solid white;
+}
+.post blockquote {
+    margin:1em 20px;
+}
+.post blockquote p {
+    margin:.75em 0;
+}
+
+.postinfo {
+    font-size : 95%;
+    padding: 2em 0.2em 0.2em 0.2em;
+    color: #006666;
+}
+
+
+.forendPost{
+	overflow:hidden;
+}
+
+
+/*links a posts previo y posterior*/
+#previousPost{
+	margin: 0 2em 4em;
+	font:120%/1.8em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+	font-weight:bold;
+	float: left;
+}
+#previousPost a:link{
+	color: #663366;
+}
+
+#previousPost a:visited {
+    color: #0033CC;
+}
+#previousPost a:active {
+    color: #CC3366;
+}
+#previousPost a:hover {
+    color: #CC3366;
+}
+
+#nextPost{
+	margin: 0 5em 4em;
+	font:120%/1.8em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+	font-weight:bold;
+	float: right;
+}
+#nextPost a:link{
+	color: #663366;
+}
+
+#nextPost a:visited {
+    color: #0033CC;
+}
+#nextPost a:active {
+    color: #CC3366;
+}
+#nextPost a:hover {
+    color: #CC3366;
+}
+
+#datePosts { 
+	width:100%; 
+	float:right; 
+	margin:0; 
+	padding:0;
+	max-height:100%;
+	overflow:auto;
+	overflow-x: hidden;
+	background-color:#CCFFCC; 
+}
+#datePosts ul{ 
+    margin:0; 
+	padding:0;
+	overflow: hidden;
+}
+
+.jstree-icon {
+    display: inline;
+}

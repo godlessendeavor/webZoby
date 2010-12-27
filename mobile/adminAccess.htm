@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+	<meta name="author" content="thrasher">
+
+	<title>Admin Access</title>
+    
+	<script language="JavaScript" src="js/md5.js"></script>
+	<script language="JavaScript">
+
+	function calculaMD5() {
+		var pw = document.forms["login"].elements["pswd"].value;
+		return hex_md5(pw);
+	}
+
+	function enviaMD5(hash) {
+		document.forms["login"].elements["pswd"].value = hash;
+		document.forms["Enter"].submit();
+	}
+	
+
+	</script>
+
+</head>
+
+<body text="#003366" bgcolor="#CCFFCC">
+<form name="login" action="adminAccess.php" method="post">
+<table>
+<tr><td>nick</td><td><input type="text" name="nick" size="20"></td></tr>
+<tr><td>password</td><td><input type="password" name="pswd" size="20"></td><tr>
+</table>
+<input type="submit" value="Enter" onClick="enviaMD5(calculaMD5())">
+</form>
+
+<a href="homepage.php">Home</a>
+
+</body>
+</html>

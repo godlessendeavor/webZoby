@@ -1,0 +1,4 @@
+﻿#deny all access
+deny from all
+#denies showind file directory
+Options -Indexes [Unregister Version] Left 30 Times, please order it from http://www.regnow.com/softsell/nph-softsell.cgi?item=8539-37

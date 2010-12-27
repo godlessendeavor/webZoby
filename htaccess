@@ -1,0 +1,5 @@
+ErrorDocument 404 /pagenotfound.htm
+DirectoryIndex index.php
+php_flag display_errors Off
+php_flag log_errors On
+php_value error_log /logs/errors.txt
